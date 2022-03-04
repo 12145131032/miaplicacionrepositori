@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadeProductos">
+
+    <TextView
+        android:id="@+id/lblCielo0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cielo: " />
+
+    <TextView android:id="@+id/lblCielo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblCielo0"/>
+
+    <TextView
+        android:id="@+id/lblTemperatura0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCielo0"
+        android:layout_marginTop="5dp"
+        android:text="Temperatura: " />
+
+    <TextView android:id="@+id/lblTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCielo0"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/lblTemperatura0"/>
+
+    <TextView
+        android:id="@+id/lblHumedad0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTemperatura0"
+        android:layout_marginTop="5dp"
+        android:text="Humedad: " />
+
+    <TextView android:id="@+id/lblHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lblTemperatura0"
+        android:layout_toRightOf="@id/lblHumedad0"/>
+
+    <TextView
+        android:id="@+id/lblcosto"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTemperatura0"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="-67dp"
+        android:layout_marginTop="29dp"
+       />
+
+    <Button
+        android:id="@+id/btnEliminarListener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblHumedad0"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp"
+        android:text="Eliminar Listener" />
+
+
+</RelativeLayout>
